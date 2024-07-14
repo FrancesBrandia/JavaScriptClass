@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=500, initial-scale=1.0">
+    <link href="https://fonts.googleapis.com/css2?family=Oswald:wght@200;500&display=swap" rel="stylesheet">
+    <title>Generador de Paleta de Colores</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+<!--Color Palette Generator-->
+    <div class="container">
+
+        <h1>Paletas <br> de Colores</h1>
+        <h3>Generador</h3>
+        <hr> 
+        <label for="num-colors">Número de colores</label>
+        <br>
+        <div id="outlined-colors" class="outlined"> <!-- Updated id to outlined-colors -->
+            <select id="num-colors">
+                <option value="3">3 colores</option>
+                <option value="6" selected>6 colores</option>
+                <option value="9">9 colores</option>
+            </select>
+            <button id="generate-btn">Generar</button>
+        </div>
+
+        <div id="color-palette" class="color-palette">
+        </div>
+
+        <div id="add-color-section" style="display: none;">
+            <label for="color-picker">Agregar Color Adicional</label>
+            <br>
+            <div id="outlined-color-picker" class="outlined"> <!-- Updated id to outlined-color-picker -->
+                <input type="color" id="color-picker" value="#000000">
+                <button id="add-color-btn">Agregar</button>
+            </div>
+        </div>
+    </div>
+
+
+<!--Libraries generated/Stored-->
+    <div class="container">
+        <hr>
+        <h1>Librería</h1>
+        <div id="palette-library" class="palette-library">
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
